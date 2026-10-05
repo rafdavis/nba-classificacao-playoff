@@ -1,0 +1,19 @@
+[project]
+name = "nba-classificacao-playoff"
+version = "1.0.0"
+description = "Sistema determinístico de classificação de equipes para os playoffs da NBA."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "unit: testes unitários das regras de negócio",
+]
